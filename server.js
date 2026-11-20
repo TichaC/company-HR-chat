@@ -11,6 +11,8 @@ const LYZR_API_KEY = process.env.LYZR_API_KEY;
 const LYZR_AGENT_ID =
   process.env.LYZR_AGENT_ID || JSON.parse(readFileSync(path.join(root, "lyzr.config.json"), "utf8")).agent_id;
 const LYZR_CHAT_URL = "https://agent-prod.studio.lyzr.ai/v3/inference/chat/";
+// Lyzr memory is per session; bump this (e.g. on Render) to give every employee a clean memory.
+const MEMORY_VERSION = process.env.MEMORY_VERSION || "2";
 
 if (!LYZR_API_KEY) console.warn("LYZR_API_KEY is not set - chat requests will fail.");
 
@@ -73,7 +75,7 @@ app.post("/api/chat", async (req, res) => {
         agent_id: LYZR_AGENT_ID,
         // One permanent session per employee: Lyzr memory recalls the cross-session test only
         // within a session, so this lets the agent remember the employee across visits.
-        session_id: `${LYZR_AGENT_ID}-${employee.id}`,
+        session_id: `${LYZR_AGENT_ID}-${employee.id}-m${MEMORY_VERSION}`,
         message: message.trim(),
         system_prompt_variables: {
           today: today(),
