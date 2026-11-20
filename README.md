@@ -21,7 +21,9 @@ To change the prompt or add documents, edit `scripts/agent-prompt.mjs` or add a 
 npm run setup-lyzr
 ```
 
-It reuses the IDs in `lyzr.config.json`, uploads only new files and updates the agent.
+It reuses the IDs in `lyzr.config.json`, uploads only new files and updates the agent. After editing an existing `kb/` file, run `npm run setup-lyzr -- --rebuild` to train a fresh knowledge base, switch the agent to it and delete the old one.
+
+Conversation history is kept by the app, not by Lyzr memory: the browser sends the last few turns, and the server passes them to the agent as "already answered" context. With Lyzr's short-term memory on, the agent kept re-answering earlier questions.
 
 > Note: Lyzr's multipart `/v3/train/txt/` endpoint reports success but indexes nothing for these files, so the script uses the JSON `/v3/train/text/` endpoint with one chunk per section.
 

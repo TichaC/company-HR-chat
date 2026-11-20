@@ -39,6 +39,13 @@ try {
   config = JSON.parse(await readFile(configPath, "utf8"));
 } catch {}
 
+// --rebuild: after editing existing kb/ files, train a fresh knowledge base and drop the old one
+const previousRagId = process.argv.includes("--rebuild") ? config.rag_id : null;
+if (previousRagId) {
+  delete config.rag_id;
+  config.trained = [];
+}
+
 // 1. Knowledge base
 if (!config.rag_id) {
   const rag = await call(
@@ -107,7 +114,6 @@ const agentBody = {
       },
       priority: 0,
     },
-    { type: "SHORT_TERM_MEMORY", config: { max_messages_context_count: 10 }, priority: 0 },
   ],
 };
 
@@ -121,4 +127,9 @@ if (config.agent_id) {
 }
 
 await writeFile(configPath, JSON.stringify(config, null, 2));
+
+if (previousRagId) {
+  await call(`${RAG_API}/v3/rag/${previousRagId}/`, { method: "DELETE" });
+  console.log("Deleted previous knowledge base", previousRagId);
+}
 console.log(`\nDone. Set LYZR_AGENT_ID=${config.agent_id} on Render.`);

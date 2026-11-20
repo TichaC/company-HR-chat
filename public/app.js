@@ -1,7 +1,7 @@
 // BE8 AI Coworker front end: demo sign-in, chat with the Lyzr agent (via /api/chat),
 // and source chips that open the cited company document or the employee's HR record.
 const $ = (sel) => document.querySelector(sel);
-const state = { employee: null, sessionId: null, busy: false, docCache: {} };
+const state = { employee: null, sessionId: null, history: [], busy: false, docCache: {} };
 
 const store = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -109,6 +109,7 @@ const SUGGESTIONS = [
 
 function startNewChat() {
   state.sessionId = newSessionId();
+  state.history = [];
   const e = state.employee;
   $("#messages").innerHTML = `
     <div class="welcome">
@@ -140,7 +141,7 @@ function appendMessage(role, html, extraClass = "") {
 
 // Split the agent's trailing "Sources: HR-POL-002 §3; My HR record" line into chips.
 function parseSources(text) {
-  const match = text.match(/\n\s*[*_]*Sources?[*_]*\s*:\s*([^\n]+)\s*$/i);
+  const match = text.match(/\n\s*[*_]*(?:Sources?|แหล่งที่มา|ที่มา|อ้างอิง)[*_]*\s*:\s*([^\n]+)\s*$/i);
   if (!match) return { body: text, sources: [] };
   const body = text.slice(0, match.index).trimEnd();
   const sources = [];
@@ -188,9 +189,10 @@ async function send(text) {
     const { response } = await api("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ employeeId: state.employee.id, sessionId: state.sessionId, message }),
+      body: JSON.stringify({ employeeId: state.employee.id, sessionId: state.sessionId, message, history: state.history }),
     });
     const { body, sources } = parseSources(response);
+    state.history.push({ role: "user", text: message }, { role: "assistant", text: body });
     pending.querySelector(".bubble").innerHTML = DOMPurify.sanitize(marked.parse(body)) + sourcesHtml(sources);
   } catch (err) {
     pending.classList.add("error");

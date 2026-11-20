@@ -58,11 +58,18 @@ app.get("/api/docs/:code", (req, res) => {
 });
 
 app.post("/api/chat", async (req, res) => {
-  const { employeeId, message, sessionId } = req.body || {};
+  const { employeeId, message, sessionId, history } = req.body || {};
   const employee = findEmployee(employeeId);
   if (!employee) return res.status(400).json({ error: "Unknown employee" });
   if (typeof message !== "string" || !message.trim() || message.length > 2000)
     return res.status(400).json({ error: "Message must be 1-2000 characters" });
+
+  // The app keeps the conversation (Lyzr's own memory made the agent re-answer old questions),
+  // so earlier turns go in the system prompt as already answered and only the new question is sent.
+  const turns = (Array.isArray(history) ? history : [])
+    .filter((t) => t && (t.role === "user" || t.role === "assistant") && typeof t.text === "string")
+    .slice(-6)
+    .map((t) => `${t.role === "user" ? "Employee" : "You"}: ${t.text.slice(0, 1500)}`);
 
   try {
     const lyzr = await fetch(LYZR_CHAT_URL, {
@@ -73,7 +80,14 @@ app.post("/api/chat", async (req, res) => {
         agent_id: LYZR_AGENT_ID,
         session_id: `${LYZR_AGENT_ID}-${employee.id}-${String(sessionId || "default").slice(0, 40)}`,
         message: message.trim(),
-        system_prompt_variables: { today: today(), employee_context: JSON.stringify(employee, null, 1) },
+        system_prompt_variables: {
+          today: today(),
+          employee_context: JSON.stringify(employee, null, 1),
+          conversation_state: turns.length
+            ? "FOLLOW-UP message in an ongoing conversation. Do NOT greet (no Hi, no สวัสดี) and do not use the employee's name. Start directly with the answer."
+            : "FIRST message of a new conversation. Open with one short greeting line using the nickname, then answer.",
+          conversation_history: turns.length ? turns.join("\n\n") : "(none - this is the first message)",
+        },
       }),
       signal: AbortSignal.timeout(90_000),
     });
