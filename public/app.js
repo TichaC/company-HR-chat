@@ -1,7 +1,7 @@
 // BE8 AI Coworker front end: demo sign-in, chat with the Lyzr agent (via /api/chat),
 // and source chips that open the cited company document or the employee's HR record.
 const $ = (sel) => document.querySelector(sel);
-const state = { employee: null, sessionId: null, history: [], busy: false, docCache: {} };
+const state = { employee: null, busy: false, docCache: {} };
 
 const store = {
   get(key) { try { return localStorage.getItem(key); } catch { return null; } },
@@ -12,7 +12,6 @@ const store = {
 const thb = (n) => "฿" + Number(n).toLocaleString("en-US");
 const initials = (name) => name.split(" ").map((p) => p[0]).slice(0, 2).join("");
 const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
-const newSessionId = () => (crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random().toString(16).slice(2));
 const fmtDate = (iso) => new Date(iso + "T00:00:00").toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
 const docIcon = '<svg viewBox="0 0 24 24" width="14" height="14"><path d="M7 3h7l5 5v13H7z M14 3v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>';
@@ -108,13 +107,11 @@ const SUGGESTIONS = [
 ];
 
 function startNewChat() {
-  state.sessionId = newSessionId();
-  state.history = [];
   const e = state.employee;
   $("#messages").innerHTML = `
     <div class="welcome">
       <h2>Hi ${escapeHtml(e.nickname)}, <span>how can I help?</span></h2>
-      <p>I know BE8's policies and your own HR record. Ask in English or Thai. Every answer shows the document it came from, so you can check it.</p>
+      <p>I know BE8's policies and your own HR record, and I remember what you've told me in earlier chats. Ask in English or Thai. Every answer shows the document it came from, so you can check it.</p>
     </div>`;
   $("#suggestions").innerHTML = SUGGESTIONS.map((s) => `<button type="button" class="suggestion">${escapeHtml(s)}</button>`).join("");
   $("#suggestions").hidden = false;
@@ -182,6 +179,7 @@ async function send(text) {
   $("#input").value = "";
   autosize();
 
+  const firstMessage = !$("#messages .msg.user");
   appendMessage("user", escapeHtml(message));
   const pending = appendMessage("bot", '<span class="typing"><i></i><i></i><i></i></span><span class="typing-note">Checking company documents…</span>');
 
@@ -189,10 +187,9 @@ async function send(text) {
     const { response } = await api("/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ employeeId: state.employee.id, sessionId: state.sessionId, message, history: state.history }),
+      body: JSON.stringify({ employeeId: state.employee.id, message, firstMessage }),
     });
     const { body, sources } = parseSources(response);
-    state.history.push({ role: "user", text: message }, { role: "assistant", text: body });
     pending.querySelector(".bubble").innerHTML = DOMPurify.sanitize(marked.parse(body)) + sourcesHtml(sources);
   } catch (err) {
     pending.classList.add("error");

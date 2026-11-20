@@ -114,6 +114,12 @@ const agentBody = {
       },
       priority: 0,
     },
+    // Lyzr long-term memory, scoped to user_id (the employee's email) and shared across chats
+    {
+      type: "MEMORY",
+      config: { provider: "cognis", lyzr_memory: { provider_type: "cognis", params: { cross_session: true } } },
+      priority: 0,
+    },
   ],
 };
 
