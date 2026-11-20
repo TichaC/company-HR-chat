@@ -102,6 +102,7 @@ const SUGGESTIONS = [
   "How do I claim health insurance at a non-network clinic?",
   "How much OPD budget do I have left?",
   "What's the status of my latest insurance claim?",
+  "โรงพยาบาลในเครือข่ายมีที่ไหนบ้าง ต้องใช้เอกสารอะไร",
   "เงินเดือนออกวันไหน",
   "ลาป่วยต้องใช้ใบรับรองแพทย์ไหม",
 ];
