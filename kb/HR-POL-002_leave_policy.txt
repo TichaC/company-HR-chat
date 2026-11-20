@@ -1,0 +1,53 @@
+DOCUMENT: HR-POL-002 Leave Policy
+OWNER: People & Culture (HR) | VERSION: 2026.1 | EFFECTIVE: 1 January 2026
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[HR-POL-002 Section 1 - Leave year]
+The leave year runs from 1 January to 31 December. Leave balances are shown in the BE8 People Portal and are updated in real time once a request is approved.
+
+[HR-POL-002 Section 2 - Annual leave entitlement]
+Annual (vacation) leave depends on years of service on 1 January:
+- Less than 1 year of service: 10 working days, pro-rated by month of joining (employees can use annual leave after passing probation).
+- 1 to less than 3 years: 12 working days per year.
+- 3 to less than 5 years: 15 working days per year.
+- 5 years or more: 18 working days per year.
+Managers (job level M1 and above) receive 2 extra days per year.
+
+[HR-POL-002 Section 3 - Carry-over of annual leave]
+Up to 5 unused annual leave days can be carried over to the next year. Carried-over days must be used by 31 March of the following year, otherwise they expire. Unused annual leave is not paid out in cash except when employment ends.
+
+[HR-POL-002 Section 4 - How to request annual leave]
+1. Log in to the BE8 People Portal > Leave > New request.
+2. Choose leave type, dates and add a short note. Half-day leave (morning or afternoon) is allowed.
+3. Submit at least 3 working days in advance for 1-2 days of leave, and at least 2 weeks in advance for 3 or more consecutive days.
+4. Your line manager approves in the portal. Client-facing consultants should also inform their project manager.
+5. Set your Outlook out-of-office message and hand over urgent work.
+
+[HR-POL-002 Section 5 - Sick leave]
+Employees receive up to 30 working days of paid sick leave per year, in line with the Thai Labour Protection Act.
+- Inform your manager before 10:00 on the day you are sick.
+- Record the leave in the People Portal within 2 working days of returning.
+- Sick leave of 3 or more consecutive days requires a medical certificate from a licensed doctor, uploaded to the portal.
+Sick leave does not carry over.
+
+[HR-POL-002 Section 6 - Personal (business) leave]
+3 working days of paid personal leave per year for personal matters that cannot be handled outside working hours (for example government offices, bank, house moving). Request at least 1 day in advance where possible.
+
+[HR-POL-002 Section 7 - Special leave types]
+- Birthday leave: 1 day, to be taken within your birthday month.
+- Maternity leave: 98 days (45 days paid by the company, remaining days eligible for Social Security benefit).
+- Paternity leave: 5 working days, within 30 days of the child's birth.
+- Marriage leave: 3 working days (once during employment), plus a wedding gift (see HR-BEN-004).
+- Bereavement leave: 3 working days for the death of a spouse, child, parent or sibling.
+- Ordination / religious leave: up to 15 days (once during employment, after 1 year of service).
+- Military service leave: as required by law, up to 60 days paid per year.
+- Training / exam leave: as approved by your manager for job-related courses and certifications.
+
+[HR-POL-002 Section 8 - Unpaid leave]
+Unpaid leave of up to 30 days may be approved by the business unit head and HR when all paid leave has been used.
+
+[HR-POL-002 Section 9 - Public holidays]
+BE8 observes 14 Thai public holidays each year. The holiday calendar is published in the People Portal every December. If you must work on a public holiday for a client, you receive a substitute day off (to be used within 60 days) or holiday pay as required by law.
+
+[HR-POL-002 Section 10 - Questions]
+Contact the HR helpdesk at hr@beryl8-demo.com, ext. 1100 or LINE OA @be8-hr.

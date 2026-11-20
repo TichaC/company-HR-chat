@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: be8-ai-coworker
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci
+    startCommand: npm start
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: LYZR_AGENT_ID
+        value: 6affa16f4fdf4fe1ecb81200
+      - key: LYZR_API_KEY
+        sync: false # Render asks for this secret when you create the Blueprint

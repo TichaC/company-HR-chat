@@ -1,0 +1,15 @@
+{
+  "rag_name": "be8_ai_coworker_kb",
+  "trained": [
+    "FIN-POL-005_expense_and_travel.txt",
+    "GEN-001_company_handbook.txt",
+    "HR-BEN-003_health_insurance.txt",
+    "HR-BEN-004_payroll_and_welfare.txt",
+    "HR-FAQ-008_thai_faq.txt",
+    "HR-POL-002_leave_policy.txt",
+    "HR-POL-006_work_hours_and_hybrid.txt",
+    "IT-GUI-007_it_helpdesk.txt"
+  ],
+  "agent_id": "6affa16f4fdf4fe1ecb81200",
+  "rag_id": "6affa2eea57f7e5d64316666"
+}

@@ -1,0 +1,59 @@
+DOCUMENT: HR-BEN-003 Group Health Insurance and Medical Benefits
+OWNER: People & Culture - Benefits Desk | VERSION: 2026.1 | EFFECTIVE: 1 January 2026 to 31 December 2026
+INSURER (demo): SafeCare Group Health (fictional insurer used for this demo)
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[HR-BEN-003 Section 1 - Who is covered]
+All permanent employees are covered from their first day of work. Spouses and children (under 20, or under 23 if studying full-time) can be added at the employee's cost at the group rate. Enrolment for dependants is open in January each year or within 30 days of marriage or birth.
+
+[HR-BEN-003 Section 2 - Plan tiers and coverage limits]
+Plan is assigned by job level.
+Plan Silver (job levels P1-P3):
+- IPD (inpatient) room and board: up to 3,000 THB per night, max 365 days per year
+- IPD medical expenses: up to 100,000 THB per admission
+- OPD (outpatient): up to 1,500 THB per visit, 30 visits per year, annual OPD cap 30,000 THB
+- Dental: 3,000 THB per year
+- Annual health check-up: basic package
+Plan Gold (job levels P4-P5 and M1):
+- IPD room and board: up to 5,000 THB per night
+- IPD medical expenses: up to 200,000 THB per admission
+- OPD: up to 2,000 THB per visit, 30 visits per year, annual OPD cap 40,000 THB
+- Dental: 5,000 THB per year
+- Annual health check-up: executive package
+Plan Platinum (job levels M2 and above):
+- IPD room and board: up to 8,000 THB per night
+- IPD medical expenses: up to 400,000 THB per admission
+- OPD: up to 3,000 THB per visit, 40 visits per year, annual OPD cap 60,000 THB
+- Dental: 8,000 THB per year
+- Eyeglasses / contact lenses: 3,000 THB per year
+- Annual health check-up: executive plus package
+All plans include: accident coverage (OPD within 24 hours), ambulance, and life & accident insurance of 24 times monthly salary (max 2,000,000 THB).
+
+[HR-BEN-003 Section 3 - How to claim: network hospital (cashless)]
+Use this when you visit one of the 400+ SafeCare network hospitals (for example Bangkok Hospital, Samitivej, BNH, Phyathai, Vejthani - demo list).
+1. Show your SafeCare e-card in the SafeCare app (or physical card) and your Thai ID card or passport at registration.
+2. The hospital checks your coverage directly with SafeCare.
+3. You pay nothing for covered items. You pay only the amount above your plan limit and non-covered items (e.g. vitamins, cosmetic treatment).
+4. For planned IPD admissions, ask the hospital to request pre-approval (Fax claim) at least 3 days before admission.
+
+[HR-BEN-003 Section 4 - How to claim: non-network hospital or clinic (reimbursement)]
+1. Pay the bill yourself.
+2. Collect: (a) original official receipt in your name, (b) medical certificate showing diagnosis, (c) itemised bill for IPD, (d) copy of your ID card, (e) bank book page for transfer.
+3. Submit within 30 days of the treatment date (IPD: within 90 days) through the SafeCare app (Claims > New claim > upload photos) OR give the documents to the Benefits Desk, 25th Floor.
+4. SafeCare reviews the claim within 15 working days and transfers the money to your bank account. You can track status in the SafeCare app.
+5. Claims submitted after the deadline may be rejected.
+
+[HR-BEN-003 Section 5 - Dental claims]
+Dental treatment (cleaning, filling, extraction, X-ray) is reimbursed up to your plan's yearly dental limit. Submit the official receipt and dental certificate through the SafeCare app within 30 days. Orthodontics (braces) and cosmetic whitening are not covered.
+
+[HR-BEN-003 Section 6 - Annual health check-up]
+Book your annual check-up between March and November at a network hospital listed in the People Portal > Benefits > Health check. Show your e-card; no payment is needed for the package. Results are confidential and sent only to you.
+
+[HR-BEN-003 Section 7 - Not covered]
+Pre-existing conditions in the first 120 days (except for employees transferred from the previous policy), cosmetic surgery, infertility treatment, self-inflicted injuries, alternative medicine not prescribed by a doctor, and treatment outside Thailand unless it is an emergency during an approved business trip.
+
+[HR-BEN-003 Section 8 - Social Security]
+In addition to group insurance, all employees are registered with the Social Security Office (SSO). Employees contribute 5% of salary (max 750 THB per month). SSO hospital selection can be changed once a year between January and March.
+
+[HR-BEN-003 Section 9 - Contacts]
+Benefits Desk: benefits@beryl8-demo.com, ext. 1120 (Khun Ploy). SafeCare 24-hour hotline (demo): 1700-000-888.

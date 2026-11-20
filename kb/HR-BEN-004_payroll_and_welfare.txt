@@ -1,0 +1,29 @@
+DOCUMENT: HR-BEN-004 Payroll, Provident Fund and Welfare Benefits
+OWNER: People & Culture and Finance | VERSION: 2026.1 | EFFECTIVE: 1 January 2026
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[HR-BEN-004 Section 1 - Pay day]
+Salary is paid monthly on the 25th of each month by bank transfer. If the 25th falls on a weekend or public holiday, salary is paid on the previous working day. Payslips are available in the BE8 People Portal > Payslip from the 24th.
+
+[HR-BEN-004 Section 2 - Overtime and on-call]
+Overtime for eligible job levels (P1-P3) must be pre-approved by the manager and recorded in the People Portal by the 15th to be included in the same month's salary. On-call allowance for Managed Services: 500 THB per weekday night, 1,000 THB per weekend day.
+
+[HR-BEN-004 Section 3 - Provident fund]
+Employees can join the BE8 provident fund after passing probation. Employee contribution: 3% to 15% of salary (your choice, changeable in January and July). Company contribution by years of service: under 3 years 3%, 3 to 5 years 5%, over 5 years 7%. Vesting of company contribution: 50% after 2 years, 100% after 5 years.
+
+[HR-BEN-004 Section 4 - Tax documents]
+The withholding tax certificate (50 Tawi) is available in the People Portal by 15 February each year. Employees should update tax allowance information (spouse, children, insurance, donations) in the portal by 31 December.
+
+[HR-BEN-004 Section 5 - Welfare allowances]
+- Wedding gift: 5,000 THB (once, submit marriage certificate within 60 days).
+- New baby gift: 3,000 THB per child (submit birth certificate within 60 days).
+- Funeral support: 10,000 THB for the death of a parent, spouse or child, plus a wreath from the company.
+- Fitness / wellness allowance: 6,000 THB per year (gym, sports equipment, fitness apps). Claim through the BE8 Expense app with receipts.
+- Learning budget: 20,000 THB per year for job-related courses and certifications (manager approval required before enrolment).
+- Mobile phone allowance: 600 THB per month for client-facing roles.
+
+[HR-BEN-004 Section 6 - Salary advance and loans]
+No salary advance is offered. Employees can apply for a low-interest welfare loan (demo partner bank) after 1 year of service through HR.
+
+[HR-BEN-004 Section 7 - Contacts]
+Payroll: payroll@beryl8-demo.com, ext. 1130.

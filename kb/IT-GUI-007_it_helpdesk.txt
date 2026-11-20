@@ -1,0 +1,19 @@
+DOCUMENT: IT-GUI-007 IT Helpdesk Guide
+OWNER: IT | VERSION: 2026.1 | EFFECTIVE: 1 January 2026
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[IT-GUI-007 Section 1 - Getting help]
+IT service desk: itsupport@beryl8-demo.com, ext. 2000, or raise a ticket at https://it.beryl8-demo.com. Hours: 08:00-20:00 on working days. Urgent security incidents (lost laptop, phishing click): call ext. 2999 at any time.
+
+[IT-GUI-007 Section 2 - Password reset]
+Reset your BE8 account password at https://it.beryl8-demo.com/reset using your registered mobile number for OTP. Passwords must be at least 14 characters and are changed every 180 days. Never share your password or OTP with anyone, including IT staff.
+
+[IT-GUI-007 Section 3 - VPN and Wi-Fi]
+- Office Wi-Fi: connect to "BE8-Staff" with your BE8 account. Guests use "BE8-Guest" (voucher from reception).
+- VPN: install GlobalProtect from the IT portal and connect to vpn.beryl8-demo.com. VPN is required to access internal systems from outside the office.
+
+[IT-GUI-007 Section 4 - Laptop and equipment]
+Every employee receives a company laptop (MacBook Pro or Dell Latitude). Laptop refresh cycle is every 3 years. Request a monitor, headset or keyboard via IT portal > Request equipment. Lost or stolen devices must be reported within 24 hours.
+
+[IT-GUI-007 Section 5 - Software and AI tools]
+Approved software can be installed from Self Service (Mac) or Company Portal (Windows). Do not paste client confidential data into public AI tools. Use the company-approved AI assistants listed on the IT portal.

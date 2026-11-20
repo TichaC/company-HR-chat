@@ -1,0 +1,33 @@
+DOCUMENT: FIN-POL-005 Expense Claims and Business Travel Policy
+OWNER: Finance | VERSION: 2026.1 | EFFECTIVE: 1 January 2026
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[FIN-POL-005 Section 1 - How to submit an expense claim]
+1. Open the BE8 Expense app > New claim.
+2. Select the project code (client work) or cost centre (internal).
+3. Take a photo of each receipt. Official tax invoices must show the company name "Beryl 8 Plus Co., Ltd." and tax ID.
+4. Submit within 30 days of the expense date. Your manager approves, then Finance reviews.
+5. Approved claims are paid with your next salary if approved by the 15th of the month, otherwise the following month.
+
+[FIN-POL-005 Section 2 - Local transport]
+- Taxi / Grab for client visits: actual cost with receipt or app e-receipt.
+- Using your own car: 6 THB per kilometre plus tolls and parking with receipts.
+- Late-night work after 22:00: taxi home is reimbursable.
+
+[FIN-POL-005 Section 3 - Meals and client entertainment]
+- Overtime meal (working after 20:00): up to 200 THB.
+- Client entertainment: must be pre-approved by the practice head; record attendee names and purpose.
+
+[FIN-POL-005 Section 4 - Domestic travel (outside Bangkok)]
+- Per diem: 500 THB per day.
+- Hotel: up to 2,500 THB per night.
+- Flights: economy class, booked through the Finance travel desk at least 7 days ahead.
+
+[FIN-POL-005 Section 5 - International travel]
+- Per diem: 60 USD per day (Asia), 90 USD per day (other regions).
+- Hotel: up to 150 USD per night (Asia), 220 USD per night (other regions).
+- Flights: economy for trips under 6 hours, premium economy for longer flights.
+- Travel insurance is provided automatically; request a certificate from finance@beryl8-demo.com.
+
+[FIN-POL-005 Section 6 - Contacts]
+Finance: finance@beryl8-demo.com, ext. 3100.

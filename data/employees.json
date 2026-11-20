@@ -1,0 +1,173 @@
+[
+  {
+    "id": "BE8-0142",
+    "name": "Napat Srisawat",
+    "nickname": "Nat",
+    "email": "napat.s@beryl8-demo.com",
+    "title": "Senior Consultant",
+    "department": "Data & AI Practice",
+    "jobLevel": "P4",
+    "manager": "Thanawat Kittipong",
+    "joinDate": "2022-03-01",
+    "birthMonth": "December",
+    "workLocation": "Bangkok HQ (hybrid, 2 WFH days/week)",
+    "leave": {
+      "year": 2026,
+      "annual": { "entitled": 15, "carriedOver": 2, "carriedOverUsed": 2, "used": 9, "pending": 1, "remaining": 5 },
+      "sick": { "entitled": 30, "used": 4, "remaining": 26 },
+      "personal": { "entitled": 3, "used": 1, "remaining": 2 },
+      "birthday": { "entitled": 1, "used": 0, "remaining": 1, "note": "Must be used in December" },
+      "recent": [
+        { "type": "Annual", "dates": "2026-12-04", "days": 1, "status": "Pending manager approval" },
+        { "type": "Annual", "dates": "2026-10-13 to 2026-10-15", "days": 3, "status": "Approved" },
+        { "type": "Sick", "dates": "2026-09-02", "days": 1, "status": "Approved" }
+      ]
+    },
+    "health": {
+      "plan": "Gold",
+      "insurer": "SafeCare Group Health",
+      "memberId": "SC-26-0142",
+      "opd": { "annualCap": 40000, "used": 12400, "remaining": 27600, "visitsUsed": 8, "visitsAllowed": 30 },
+      "dental": { "annualCap": 5000, "used": 1500, "remaining": 3500 },
+      "healthCheck2026": "Not booked yet (booking window closes 30 November 2026)",
+      "dependants": ["Spouse - Kanokwan Srisawat"],
+      "recentClaims": [
+        { "date": "2026-11-10", "type": "OPD reimbursement - Phyathai clinic", "amount": 1850, "status": "Under review (submitted 2026-11-12)" },
+        { "date": "2026-08-21", "type": "Dental - scaling", "amount": 1500, "status": "Paid 2026-09-05" }
+      ]
+    },
+    "payroll": {
+      "nextPayDate": "2026-11-25",
+      "providentFund": { "employeeRate": "5%", "companyRate": "5%", "vested": "50%" },
+      "fitnessAllowance": { "annual": 6000, "used": 2000, "remaining": 4000 },
+      "learningBudget": { "annual": 20000, "used": 12000, "remaining": 8000 }
+    }
+  },
+  {
+    "id": "BE8-0387",
+    "name": "Ploypailin Charoenwong",
+    "nickname": "Ploy",
+    "email": "ploypailin.c@beryl8-demo.com",
+    "title": "Consultant",
+    "department": "Customer Experience (CX) Practice",
+    "jobLevel": "P2",
+    "manager": "Arthit Boonmee",
+    "joinDate": "2025-06-16",
+    "birthMonth": "February",
+    "workLocation": "On-site at client (bank project), Bangkok",
+    "leave": {
+      "year": 2026,
+      "annual": { "entitled": 10, "carriedOver": 0, "carriedOverUsed": 0, "used": 3, "pending": 0, "remaining": 7 },
+      "sick": { "entitled": 30, "used": 1, "remaining": 29 },
+      "personal": { "entitled": 3, "used": 0, "remaining": 3 },
+      "birthday": { "entitled": 1, "used": 1, "remaining": 0, "note": "Used in February" },
+      "recent": [
+        { "type": "Annual", "dates": "2026-07-28 to 2026-07-29", "days": 2, "status": "Approved" },
+        { "type": "Birthday", "dates": "2026-02-14", "days": 1, "status": "Approved" }
+      ]
+    },
+    "health": {
+      "plan": "Silver",
+      "insurer": "SafeCare Group Health",
+      "memberId": "SC-26-0387",
+      "opd": { "annualCap": 30000, "used": 4500, "remaining": 25500, "visitsUsed": 3, "visitsAllowed": 30 },
+      "dental": { "annualCap": 3000, "used": 0, "remaining": 3000 },
+      "healthCheck2026": "Completed 2026-05-09 at Samitivej",
+      "dependants": [],
+      "recentClaims": [
+        { "date": "2026-06-18", "type": "OPD cashless - Bangkok Hospital", "amount": 2100, "status": "Settled directly with hospital" }
+      ]
+    },
+    "payroll": {
+      "nextPayDate": "2026-11-25",
+      "providentFund": { "employeeRate": "3%", "companyRate": "3%", "vested": "0%" },
+      "fitnessAllowance": { "annual": 6000, "used": 0, "remaining": 6000 },
+      "learningBudget": { "annual": 20000, "used": 4500, "remaining": 15500 }
+    }
+  },
+  {
+    "id": "BE8-0021",
+    "name": "Thanawat Kittipong",
+    "nickname": "Tan",
+    "email": "thanawat.k@beryl8-demo.com",
+    "title": "Engineering Manager",
+    "department": "Managed Services",
+    "jobLevel": "M1",
+    "manager": "Sirichai Pattanakul (Head of Delivery)",
+    "joinDate": "2018-08-01",
+    "birthMonth": "April",
+    "workLocation": "Bangkok HQ (hybrid)",
+    "leave": {
+      "year": 2026,
+      "annual": { "entitled": 20, "carriedOver": 5, "carriedOverUsed": 5, "used": 14, "pending": 2, "remaining": 4 },
+      "sick": { "entitled": 30, "used": 0, "remaining": 30 },
+      "personal": { "entitled": 3, "used": 2, "remaining": 1 },
+      "birthday": { "entitled": 1, "used": 1, "remaining": 0, "note": "Used in April" },
+      "recent": [
+        { "type": "Annual", "dates": "2026-12-22 to 2026-12-23", "days": 2, "status": "Pending (awaiting Head of Delivery)" },
+        { "type": "Annual", "dates": "2026-08-10 to 2026-08-14", "days": 5, "status": "Approved" }
+      ]
+    },
+    "health": {
+      "plan": "Gold",
+      "insurer": "SafeCare Group Health",
+      "memberId": "SC-26-0021",
+      "opd": { "annualCap": 40000, "used": 31200, "remaining": 8800, "visitsUsed": 17, "visitsAllowed": 30 },
+      "dental": { "annualCap": 5000, "used": 5000, "remaining": 0 },
+      "healthCheck2026": "Completed 2026-03-21 at BNH",
+      "dependants": ["Spouse - Wipada Kittipong", "Child - Pran Kittipong (age 6)"],
+      "recentClaims": [
+        { "date": "2026-10-30", "type": "IPD - Vejthani Hospital (2 nights), child", "amount": 38500, "status": "Settled cashless" },
+        { "date": "2026-11-15", "type": "OPD reimbursement - private clinic", "amount": 900, "status": "Documents missing: medical certificate" }
+      ]
+    },
+    "payroll": {
+      "nextPayDate": "2026-11-25",
+      "providentFund": { "employeeRate": "10%", "companyRate": "7%", "vested": "100%" },
+      "fitnessAllowance": { "annual": 6000, "used": 6000, "remaining": 0 },
+      "learningBudget": { "annual": 20000, "used": 18000, "remaining": 2000 }
+    }
+  },
+  {
+    "id": "BE8-0455",
+    "name": "Siriporn Wongsakul",
+    "nickname": "Fah",
+    "email": "siriporn.w@beryl8-demo.com",
+    "title": "Marketing Specialist",
+    "department": "Marketing",
+    "jobLevel": "P3",
+    "manager": "Mali Rattanaporn",
+    "joinDate": "2024-01-08",
+    "birthMonth": "November",
+    "workLocation": "Bangkok HQ (hybrid)",
+    "leave": {
+      "year": 2026,
+      "annual": { "entitled": 12, "carriedOver": 3, "carriedOverUsed": 1, "used": 12, "pending": 0, "remaining": 0 },
+      "sick": { "entitled": 30, "used": 2, "remaining": 28 },
+      "personal": { "entitled": 3, "used": 1, "remaining": 2 },
+      "birthday": { "entitled": 1, "used": 0, "remaining": 1, "note": "Must be used in November (this month)" },
+      "recent": [
+        { "type": "Annual", "dates": "2026-11-03 to 2026-11-07", "days": 5, "status": "Approved" },
+        { "type": "Sick", "dates": "2026-06-11 to 2026-06-12", "days": 2, "status": "Approved" }
+      ]
+    },
+    "health": {
+      "plan": "Silver",
+      "insurer": "SafeCare Group Health",
+      "memberId": "SC-26-0455",
+      "opd": { "annualCap": 30000, "used": 9800, "remaining": 20200, "visitsUsed": 6, "visitsAllowed": 30 },
+      "dental": { "annualCap": 3000, "used": 2400, "remaining": 600 },
+      "healthCheck2026": "Booked for 2026-11-27 at Phyathai 2",
+      "dependants": [],
+      "recentClaims": [
+        { "date": "2026-10-02", "type": "Dental - filling", "amount": 2400, "status": "Paid 2026-10-20" }
+      ]
+    },
+    "payroll": {
+      "nextPayDate": "2026-11-25",
+      "providentFund": { "employeeRate": "5%", "companyRate": "3%", "vested": "0%" },
+      "fitnessAllowance": { "annual": 6000, "used": 5200, "remaining": 800 },
+      "learningBudget": { "annual": 20000, "used": 0, "remaining": 20000 }
+    }
+  }
+]

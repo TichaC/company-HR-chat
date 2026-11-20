@@ -1,0 +1,44 @@
+DOCUMENT: GEN-001 Beryl 8 Employee Handbook - Company Overview
+OWNER: People & Culture (HR) | VERSION: 2026.2 | EFFECTIVE: 1 January 2026
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[GEN-001 Section 1 - About Beryl 8]
+Beryl 8 Plus Co., Ltd. ("Beryl 8", "BE8") is a Thai technology consulting company that helps organisations adopt cloud, data and AI. BE8 delivers digital transformation, CRM and customer experience platforms, data and analytics, and generative AI solutions for enterprise clients in banking, insurance, retail, energy and the public sector.
+Head office: 25th Floor, BE8 Tower (demo address), Rama IX Road, Huai Khwang, Bangkok 10310.
+Business hours: Monday to Friday, 09:00-18:00 (Bangkok time).
+
+[GEN-001 Section 2 - Vision and values]
+Vision: To be the most trusted partner for intelligent enterprise transformation in Southeast Asia.
+Our 4 values ("BE8 Way"):
+1. Customer first - we win when our customers win.
+2. Own it - take ownership from start to finish.
+3. Learn fast - stay curious, share knowledge, try new things.
+4. One team - collaborate across practices and countries.
+
+[GEN-001 Section 3 - Business units]
+- Customer Experience (CX) Practice - CRM, service and marketing cloud implementations.
+- Data & AI Practice - data platforms, analytics, generative AI and AI agents.
+- Cloud & Integration Practice - cloud migration, APIs and integration.
+- Managed Services - 24x7 application support for clients.
+- Corporate functions - People & Culture (HR), Finance, IT, Legal, Marketing.
+
+[GEN-001 Section 4 - Key contacts]
+- HR helpdesk (leave, benefits, payroll questions): hr@beryl8-demo.com, ext. 1100, LINE OA @be8-hr
+- Benefits & insurance desk: benefits@beryl8-demo.com, ext. 1120 (Khun Ploy, Benefits Officer)
+- Payroll: payroll@beryl8-demo.com, ext. 1130
+- IT service desk: itsupport@beryl8-demo.com, ext. 2000, portal: https://it.beryl8-demo.com
+- Finance (expense claims): finance@beryl8-demo.com, ext. 3100
+- Building security / emergency: ext. 9999
+- Employee Assistance Program (confidential counselling, 24x7): 02-000-0808
+
+[GEN-001 Section 5 - Systems employees use]
+- BE8 People Portal (HR self-service): https://people.beryl8-demo.com - request leave, view payslips, update personal data, download tax certificate (50 Tawi).
+- BE8 Expense app: submit and track expense claims.
+- IT portal: request equipment, software and access.
+- Microsoft Teams and Outlook for collaboration; Confluence for knowledge sharing.
+
+[GEN-001 Section 6 - Probation and performance]
+New employees have a 119-day probation period. Performance reviews run twice a year: mid-year (June) and year-end (December). Salary adjustments and bonuses are announced in March.
+
+[GEN-001 Section 7 - Code of conduct]
+Employees must protect client confidential information, follow PDPA (Thailand Personal Data Protection Act) rules, avoid conflicts of interest, and report concerns to hr@beryl8-demo.com or the anonymous ethics hotline ethics@beryl8-demo.com.

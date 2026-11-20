@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BE8 AI Coworker</title>
+  <link rel="icon" href="be8-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"></script>
+</head>
+<body>
+  <!-- Demo sign-in -->
+  <section id="login" class="login">
+    <div class="login-brand">
+      <img src="be8-logo.png" alt="Beryl 8 logo" class="login-logo" />
+      <p class="eyebrow">Beryl 8 internal</p>
+      <h1>AI Coworker</h1>
+      <p class="lede">Ask about leave, benefits, health insurance, payroll, expenses or IT, in English or Thai. Answers are personalised to you and show the company document they came from.</p>
+    </div>
+    <div class="login-panel">
+      <p class="eyebrow dark">Demo sign-in</p>
+      <h2>Who is using the AI Coworker?</h2>
+      <p class="muted">Pick a mock employee. In production this would be your company single sign-on.</p>
+      <div id="employee-list" class="employee-list"></div>
+    </div>
+  </section>
+
+  <!-- Chat app -->
+  <section id="app" class="app" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="be8-logo.png" alt="Beryl 8" />
+        <div>
+          <strong>AI Coworker</strong>
+          <span>Beryl 8 internal</span>
+        </div>
+      </div>
+
+      <div class="profile" id="profile"></div>
+
+      <p class="side-label">My snapshot</p>
+      <div class="snapshot" id="snapshot"></div>
+
+      <button class="side-btn" id="open-record">View my HR record</button>
+      <button class="side-btn ghost" id="switch-user">Switch employee</button>
+
+      <p class="powered">Powered by Lyzr Agent Studio · demo data</p>
+    </aside>
+
+    <main class="chat">
+      <header class="chat-header">
+        <button class="icon-btn mobile-only" id="toggle-sidebar" aria-label="Show my snapshot">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div>
+          <h1>Ask the AI Coworker</h1>
+          <p>Company knowledge + your own HR record</p>
+        </div>
+        <button class="new-chat" id="new-chat">New chat</button>
+      </header>
+
+      <div class="messages" id="messages"></div>
+
+      <form class="composer" id="composer">
+        <div class="suggestions" id="suggestions"></div>
+        <div class="input-row">
+          <textarea id="input" rows="1" placeholder="Ask anything, e.g. How many leave days do I have left?" maxlength="2000"></textarea>
+          <button type="submit" id="send" aria-label="Send">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 12l16-8-6 16-2.5-6.5L4 12z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <p class="disclaimer">AI answers can be wrong. Check the source document before acting.</p>
+      </form>
+    </main>
+
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <header>
+        <div>
+          <p class="eyebrow dark" id="drawer-kicker">Source document</p>
+          <h2 id="drawer-title"></h2>
+        </div>
+        <button class="icon-btn" id="close-drawer" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </header>
+      <div class="drawer-body" id="drawer-body"></div>
+    </aside>
+    <div class="scrim" id="scrim"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

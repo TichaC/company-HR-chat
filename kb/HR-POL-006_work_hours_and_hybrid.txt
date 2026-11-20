@@ -1,0 +1,16 @@
+DOCUMENT: HR-POL-006 Working Hours and Hybrid Work Policy
+OWNER: People & Culture (HR) | VERSION: 2026.1 | EFFECTIVE: 1 January 2026
+NOTE: Demo data prepared for an internal AI Coworker demonstration.
+
+[HR-POL-006 Section 1 - Working hours]
+Standard hours are 09:00-18:00, Monday to Friday, with a one-hour lunch break. Flexible start between 08:00 and 10:00 is allowed if you complete 8 working hours and attend core hours 10:00-16:00.
+
+[HR-POL-006 Section 2 - Hybrid work]
+Employees may work from home up to 2 days per week, agreed with their manager. Consultants on client projects follow the client's on-site requirements. Tuesday is the team office day for corporate functions.
+Record work-from-home days in the People Portal > Attendance > WFH.
+
+[HR-POL-006 Section 3 - Work from anywhere]
+Up to 10 working days per year may be worked from another location in Thailand, with manager approval. Working from abroad requires HR and IT security approval.
+
+[HR-POL-006 Section 4 - Home office allowance]
+A one-time home office allowance of 3,000 THB is available after probation for a chair, monitor or other equipment. Claim through the BE8 Expense app.
