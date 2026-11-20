@@ -39,7 +39,7 @@ const app = express();
 app.use(express.json({ limit: "32kb" }));
 app.use(express.static(path.join(root, "public")));
 
-app.get("/healthz", (_req, res) => res.json({ ok: true }));
+app.get("/healthz", (_req, res) => res.json({ ok: true, memoryVersion: MEMORY_VERSION }));
 
 app.get("/api/employees", (_req, res) => {
   res.json(employees.map(({ id, name, nickname, title, department }) => ({ id, name, nickname, title, department })));
